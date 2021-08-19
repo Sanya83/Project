@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Roboto Slab';
+	background: linear-gradient(#fff,#a7a7a7); /*szinátmenet szintaxis, van css gradien gemnerátor a weben*/
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper .content {
+	background: url(picture/pics/bg-box.png);
+	box-shadow: 0 0 100px rgba(255,255,255,.8);
+	width: 600px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.title {
+	position: absolute;
+	top: -86px;
+	width: 100%;
+	color: #f0ff00;
+	font-size: 40px;
+	font-weight: 900;
+	text-align: center;
+	padding: 20px 0;
+	background: rgba(0,0,0,.4);
+	animation-name: title;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	} 
+
+@keyframes title {
+	0% {   top: -86px}
+	5% {   top: 0; }
+	40% {  background: rgba(0,0,0,.4); color: #f0ff00; }
+	50% {  background: #ff4e9c; color: white}
+	95% { top: 0; }
+	100% { top: -86px; background: #ff4e9c; color: white}
+	}
+
+
+.shoe1 {	
+	width: 500px;
+	height: 200px;
+	bottom: 50px;
+	left: -500px;
+	position: absolute;
+	background: url(picture/pics/nike1.png);
+	animation-name: shoe1;
+	animation-duration: 5s;	
+	
+}
+
+@keyframes shoe1 {
+	0% { left:-500px}
+	20% {left: 50px} /* rövidítve: 20%, 50% {left:50px}*/
+	50% {left: 50px}
+	100% { left: 600px}
+	/* becsúszik a cipő kicsit vár majd kimegy a képpből.*/
+	}
+
+.shoe2 {	
+	width: 500px;
+	height: 200px;
+	bottom: 50px;
+	left: -500px;
+	position: absolute;
+	background: url(picture/pics/nike2.png);
+	animation-name: shoe2;
+	animation-duration: 5s;	
+	animation-delay: 5s;
+}
+
+@keyframes shoe2 {
+	0% { left:-500px}
+	20% {left: 50px} /* rövidítve: 20%, 50% {left:50px}*/
+	50% {left: 50px}
+	100% { left: 600px}
+	/* becsúszik a cipő kicsit vár majd kimegy a képpből.*/
+	}
+
+.buy {
+	position: absolute;
+	font-size: 50px;
+	font-weight: 900;
+	background: rgba(0,0,0,.4);
+	color: #bfdf51;
+	width: 350px;
+	height: 90px;
+	text-align: center;
+	padding: 10px 0;
+	left: 125px;
+	top: -90px;
+	/*animation-name: buy;
+	animation-duration: 5s;
+	animation-delay: 11s;
+	animation-fill-mode: forwards;*/
+	animation: buy 5s 11s forwards, pulse 2s 14s infinite; /* rövid sor*/
+}
+
+@keyframes buy {
+	0% { top:-90px}
+	50%, 100% {top: 150px}
+}
+@keyframes pulse {
+	0% { background: rgba(0,0,0,.4); color: #bfdf51;}
+	50% { background: #bfdf51; color: black;}
+}
+
+
+/*6:22:51*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

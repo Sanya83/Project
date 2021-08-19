@@ -1,0 +1,35 @@
+
+@keyframes title {
+	0% {   top: -86px}
+	5% {   top: 0; }
+	40% {  background: rgba(0,0,0,.4); color: #f0ff00; }
+	50% {  background: #ff4e9c; color: white}
+	95% { top: 0; }
+	100% { top: -86px; background: #ff4e9c; color: white}
+	}
+
+@keyframes shoe1 {
+	0% { left:-500px}
+	20% {left: 50px} /* rövidítve: 20%, 50% {left:50px}*/
+	50% {left: 50px}
+	100% { left: 600px}
+	/* becsúszik a cipő kicsit vár majd kimegy a képpből.*/
+	}
+
+
+@keyframes shoe2 {
+	0% { left:-500px}
+	20% {left: 50px} /* rövidítve: 20%, 50% {left:50px}*/
+	50% {left: 50px}
+	100% { left: 600px}
+	/* becsúszik a cipő kicsit vár majd kimegy a képpből.*/
+	}
+
+@keyframes buy {
+	0% { top:-90px}
+	50%, 100% {top: 150px}
+}
+@keyframes pulse {
+	0% { background: rgba(0,0,0,.4); color: #bfdf51;}
+	50% { background: #bfdf51; color: black;}
+}
